@@ -20,7 +20,7 @@ const NavBar = () => {
     }, [top]);
 
     return (
-    <nav className={fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top ? 'bg-white shadow-lg' : ''}}>
+        <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top ? 'bg-white shadow-lg' : ''}`}>
         
         <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
