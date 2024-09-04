@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import NavBar from '../components/Navbar/NavBar';
-import Footer from '../components/Footer';
 import {useDocTitle} from '../components/CustomHook';
 import axios from 'axios';
 // import emailjs from 'emailjs-com';
@@ -214,7 +213,6 @@ const Contact = () => {
                 </div>
                 </div>
             </div>
-            <Footer />
         </>
 
 

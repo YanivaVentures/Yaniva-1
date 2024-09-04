@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import NavLinks from '../Navbar/NavLinks';
 import { HashLink } from 'react-router-hash-link';
-import img from 'C:/Users/VARAD/Yaniva/mld/src/components/Navbar/logo.svg';
+import img from '/Users/yagna/Desktop/Yaniva/mld/src/components/Navbar/logo.svg';
 
 const NavBar = () => {
-    const [top, setTop] = useState(!window.scrollY);
+    const [top, setTop] = useState(true);
     const [isOpen, setisOpen] = React.useState(false);
 
     function handleClick() {
@@ -17,23 +17,23 @@ const NavBar = () => {
       };
       window.addEventListener('scroll', scrollHandler);
       return () => window.removeEventListener('scroll', scrollHandler);
-    }, [top]);
+    }, []);
 
     return (
         <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top ? 'bg-white shadow-lg' : ''}`}>
-        
-        <div className="container mx-auto px-4">
-                <div className="flex justify-between items-center py-4">
+            <div className="container mx-auto px-4 max-w-7xl">
+                <div className="flex justify-between items-center py-6">
                     <div className="flex items-center">
                         <HashLink smooth to="/#hero">
                             <img 
                                 src={img}
-                                className="h-12" // Adjust the height or other styles as needed
+                                className="h-24 w-auto"
+                                alt="Logo"
                             />
                         </HashLink>
                     </div>
                     
-                    <div className="hidden lg:flex items-center space-x-6">
+                    <div className="hidden lg:flex items-center">
                         <NavLinks />
                     </div>
                     
@@ -62,4 +62,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default NavBar;

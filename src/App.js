@@ -30,7 +30,7 @@ function App() {
     });
   }, []);
 
-  useDocTitle("MLD | Molad e Konsult - Bespoke Web and Mobile Applications");
+  useDocTitle("Yaniva Ventures"); // This will now set the title to "🚀 Yaniva Ventures"
 
   return (
     <>
@@ -46,6 +46,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

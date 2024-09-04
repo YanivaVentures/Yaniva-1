@@ -1,13 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from 'react';
 
-const useDocTitle = title => {
-  const [doctitle, setDocTitle] = useState(title);
-
-  useEffect(() => {
-    document.title = doctitle;
-  }, [doctitle]);
-
-  return [doctitle, setDocTitle];
+export const useDocTitle = (title) => {
+    useEffect(() => {
+        const logo = '🚀 '; // You can change this to any appropriate emoji or character
+        document.title = `${logo}${title}`;
+    }, [title]);
 };
-
-export {useDocTitle};
