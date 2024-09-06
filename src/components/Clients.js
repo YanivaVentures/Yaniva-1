@@ -14,9 +14,10 @@ const Clients = () => {
         <div className="mt-8 bg-gray-100">
             <section data-aos="fade-up">
                 <div className="my-4 py-4">
-                        <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">Key Personnel</h2>
+                        <h2 className="my-2 text-center text-3xl uppercase font-bold"style={{ color: 'rgb(0, 153, 153)' }}>Our Team</h2>
                         <div className='flex justify-center'>
-                            <div className='w-24 border-b-4 border-blue-900'></div>
+                        <div className='w-24 border-b-4'
+  style={{ borderBottomColor: 'rgb(0, 153, 153)' }}></div>
                         </div>
                         <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900"></h2>
                     </div>

@@ -5,9 +5,11 @@ const Portfolio = () => {
     return (
         <div className="bg-gray-100 py-12" id="portfolio">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl text-blue-900 uppercase font-bold text-center mb-4">Portfolio</h2>
+                <h2 className="text-3xl uppercase font-bold text-center mb-4"style={{ color: 'rgb(0, 153, 153)' }}>Portfolio</h2>
                 <div className='flex justify-center mb-8'>
-                    <div className='w-24 border-b-4 border-blue-900'></div>
+                <div className='w-24 border-b-4'
+  style={{ borderBottomColor: 'rgb(0, 153, 153)' }}></div>
+                    </div>
                 </div>
 
                 <div className="overflow-x-auto pb-8" data-aos="fade-down" data-aos-delay="600">
@@ -30,7 +32,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </div>
+       
     );
 }
 
